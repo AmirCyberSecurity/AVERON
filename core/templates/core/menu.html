@@ -1,0 +1,166 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'core/img/favicon.ico' %}">
+    <title>AVERON - Menu</title>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
+
+    <section class="hero">
+        <span class="hero-tag">RECONNAISSANCE TOOLKIT</span>
+        <h1>Digital footprints leave traces.<br>AVERON finds them.</h1>
+        <p class="hero-desc">
+            A unified OSINT console for looking up IP addresses, domains, phone numbers,
+            MAC addresses, usernames, and exposed directories — one query, one clean answer.
+        </p>
+        <a href="/start" class="btn-start">
+            <span>Start</span>
+            <svg viewBox="0 0 24 24" fill="none">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+    </section>
+
+    <section class="about" id="about">
+        <div class="section-head">
+            <span class="section-num">01</span>
+            <h2>What is AVERON</h2>
+        </div>
+        <p>
+            AVERON pulls together public lookup tools that are normally scattered across
+            a dozen separate sites into one place. Pick a module, enter a value, get the
+            answer — no digging through tabs, no manual cross-referencing.
+        </p>
+
+        <div class="stats-row">
+            <div class="stat">
+                <span class="stat-num">6</span>
+                <span class="stat-label">Modules</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num">∞</span>
+                <span class="stat-label">Queries available</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num">0</span>
+                <span class="stat-label">Manual cross-referencing</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num">1</span>
+                <span class="stat-label">Unified platform</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num">24/7</span>
+                <span class="stat-label">Availability</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="modules" id="modules">
+        <div class="section-head">
+            <span class="section-num">02</span>
+            <h2>Modules</h2>
+        </div>
+
+        <div class="module-grid">
+            <div class="module-card">
+                <span class="module-index">01</span>
+                <h3>IP Lookup</h3>
+                <p>Geolocation, ISP, and organization behind any IPv4 address.</p>
+            </div>
+
+            <div class="module-card">
+                <span class="module-index">02</span>
+                <h3>Phone Lookup</h3>
+                <p>Carrier, region, and line type behind a phone number.</p>
+            </div>
+
+            <div class="module-card">
+                <span class="module-index">03</span>
+                <h3>Domain Lookup</h3>
+                <p>Hosting infrastructure and resolved IP for any domain.</p>
+            </div>
+
+            <div class="module-card">
+                <span class="module-index">04</span>
+                <h3>MAC Lookup</h3>
+                <p>Hardware vendor tied to a MAC address.</p>
+            </div>
+
+            <div class="module-card">
+                <span class="module-index">05</span>
+                <h3>Username Search</h3>
+                <p>Check which platforms a given username is registered on.</p>
+            </div>
+
+            <div class="module-card">
+                <span class="module-index">06</span>
+                <h3>Directory Lookup</h3>
+                <p>Discover publicly accessible directories and paths on a website.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stack" id="stack">
+        <div class="section-head">
+            <span class="section-num">03</span>
+            <h2>Under the hood</h2>
+        </div>
+        <p class="stack-intro">
+            Built with a straightforward stack — no bloated middle layers, no unnecessary
+            abstractions.
+        </p>
+
+        <div class="stack-grid">
+            <div class="stack-item">
+                <span class="stack-dot"></span>
+                <span>Python</span>
+            </div>
+            <div class="stack-item">
+                <span class="stack-dot"></span>
+                <span>Django</span>
+            </div>
+            <div class="stack-item">
+                <span class="stack-dot"></span>
+                <span>JavaScript</span>
+            </div>
+            <div class="stack-item">
+                <span class="stack-dot"></span>
+                <span>Public REST APIs</span>
+            </div>
+            <div class="stack-item">
+                <span class="stack-dot"></span>
+                <span>Python Libraries</span>
+            </div>
+            <div class="stack-item">
+                <span class="stack-dot"></span>
+                <span>HTML / CSS</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-left">
+            <a href="/" class="footer-author-link">Home</a>
+            <a href="/about" class="footer-author-link">About</a>
+        </div>
+
+        <div class="footer-center">
+            <span>AVERON · Built for responsible OSINT research</span>
+        </div>
+
+        <div class="footer-right">
+            <a href="/start" class="footer-author-link">Start</a>
+            <a href="https://github.com/AmirCyberSecurity" target="_blank" class="footer-author-link">GitHub</a>
+        </div>
+    </footer>
+
+</body>
+</html>

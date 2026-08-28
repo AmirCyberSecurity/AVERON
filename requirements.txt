@@ -1,4 +1,4 @@
-django
+django~=5.0.0
 requests
 phonenumbers
 aiohttp

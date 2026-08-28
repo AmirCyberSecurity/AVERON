@@ -43,12 +43,23 @@ This is the recommended option for users who want a quick startup experience.
 
 Select a module and enter the required value.
 
-* **IP Lookup** - Geolocation, ISP, and organization behind an IPv4 address.
-* **Phone Lookup** - Carrier, region, and line type behind a phone number.
-* **Domain Lookup** - Hosting information and resolved IP for a domain.
-* **MAC Lookup** - Hardware vendor tied to a MAC address.
-* **Username Search** - Check supported platforms for a given username.
-* **Directory Lookup** - Search supported public directory sources.
+* **IP Lookup** - IP location, ISP, ASN, AS name,
+  timezone, coordinates, and proxy/VPN/Tor status.
+
+* **Phone Lookup** - Carrier, country, region,
+  timezone, line type, number formats, and validity.
+
+* **Domain Lookup** - Resolved IP, ASN, AS name,
+  hosting information, and detected WAF services.
+
+* **MAC Lookup** - Hardware vendor associated
+  with the MAC address OUI prefix.
+
+* **Username Search** - Search usernames across
+  supported platforms and show found profiles.
+
+* **Directory Lookup** - Find accessible website
+  directories and show their HTTP status codes.
 
 AVERON sends the request to the corresponding public source and displays the returned information in the interface.
 

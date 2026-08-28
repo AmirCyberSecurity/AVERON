@@ -65,6 +65,7 @@ There is no local OSINT database and lookup results are not cached between reque
 ```text
 django~=5.0.0
 requests
+phonenumbers
 aiohttp
 ```
 

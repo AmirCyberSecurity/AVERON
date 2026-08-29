@@ -80,12 +80,6 @@ phonenumbers
 aiohttp
 ```
 
-## Limitations
-
-Every result comes from an external public source, so accuracy, completeness, uptime, and rate limits depend on that source.
-
-Treat results as a starting point for research, not as a verified record.
-
 ## Responsible Use
 
 AVERON is intended for educational OSINT research, security research, checking your own public exposure, and authorized investigations.

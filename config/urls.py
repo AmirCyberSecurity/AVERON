@@ -35,4 +35,6 @@ urlpatterns = [
     path("start/directory_lookup", views.directory_lookup, name="directory_lookup"),
     path("start/directory_lookup/", lambda request: redirect("directory_lookup")),
     path("start/directory_lookup/query/", views.directory_lookup_api, name="directory_lookup_api"),
+
+    path('<path:anything>', views.custom_404),
 ]

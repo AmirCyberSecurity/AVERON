@@ -503,3 +503,12 @@ def directory_lookup_api(request):
     response["X-Accel-Buffering"] = "no"
 
     return response
+
+def custom_404(request, exception=None, *args, **kwargs):
+    if is_bot(request):
+        return JsonResponse(
+            {"error": "Forbidden"},
+            status=403
+        )
+
+    return render(request, "core/404.html", status=404)

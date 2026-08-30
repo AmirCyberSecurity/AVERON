@@ -87,18 +87,26 @@ def ip_lookup(query: str) -> dict:
         "hosting",
     ])
 
-    response = requests.get(
-        f"http://ip-api.com/json/{query}",
-        params={"fields": fields},
-        timeout=6,
-    )
+    try:
+        response = requests.get(
+            f"http://ip-api.com/json/{query}",
+            params={"fields": fields},
+            timeout=(3, 10),
+        )
 
-    response.raise_for_status()
+        response.raise_for_status()
+        data = response.json()
 
-    data = response.json()
+    except requests.RequestException:
+        raise ValueError("IP lookup service is temporarily unavailable.")
+
+    except ValueError:
+        raise ValueError("Invalid response from IP lookup service.")
 
     if data.get("status") == "fail":
-        raise ValueError(data.get("message", "Lookup failed"))
+        raise ValueError(
+            data.get("message", "IP lookup failed.")
+        )
 
     result = []
 

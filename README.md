@@ -1,6 +1,4 @@
-<p align="center">
-  # AVERON
-</p>
+<h1 align="center">AVERON</h1>
 
 OSINT lookup framework built with Django, Python, JavaScript, public REST APIs, and Python libraries. Web-based black and gold UI with IP, phone, domain, MAC, username, and directory lookup.
 

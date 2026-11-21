@@ -1,10 +1,12 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&pause=80&color=FFD700&center=true&vCenter=true&width=1000&lines=%24+AVERON+-+OSINT+FRAMEWORK;%24+IP+%7C+PHONE+%7C+DOMAIN+%7C+MAC+LOOKUP;%24+USERNAME+SEARCH+%7C+DIRECTORY+LOOKUP;%24+PUBLIC+APIS+%7C+PYTHON+%7C+DJANGO;%24+FOR+RESPONSIBLE+OSINT+RESEARCH+ONLY)](https://git.io/typing-svg)
-
 # AVERON
 
 OSINT lookup framework built with Django, Python, JavaScript, public REST APIs, and Python libraries. Web-based black and gold UI with IP, phone, domain, MAC, username, and directory lookup.
 
 For educational purposes and responsible OSINT research only. Author not responsible for misuse.
+
+<p align="center">
+  <img src="./image.png" width="100%">
+</p>
 
 ## Installation & Run
 
@@ -85,11 +87,5 @@ aiohttp
 AVERON is intended for educational OSINT research, security research, checking your own public exposure, and authorized investigations.
 
 Do not use AVERON for stalking, harassment, doxxing, or targeting people without a legitimate reason.
-
-## Preview
-
-<p align="center">
-  <img src="./image.png" width="100%">
-</p>
 
 **AVERON** - OSINT Research Framework

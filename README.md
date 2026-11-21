@@ -5,7 +5,7 @@ OSINT lookup framework built with Django, Python, JavaScript, public REST APIs, 
 For educational purposes and responsible OSINT research only. Author not responsible for misuse.
 
 <p align="center">
-  <img src="./image.png" width="100%">
+  <img src="./image.png" width="90%">
 </p>
 
 ## Installation & Run
